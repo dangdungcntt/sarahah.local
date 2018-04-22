@@ -1,0 +1,13 @@
+.content{
+    height: 350px;
+    border-radius: 3px;
+    /*background-color: #fafafa;*/
+}
+label{
+    display: block;
+}
+.login{
+    padding-top: 15px;
+    width: 50%;
+    margin: 0 auto;
+}

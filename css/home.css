@@ -1,0 +1,56 @@
+.content{
+    background-color: #fafafa;
+}
+.information{
+    background-color: white;
+    margin-top: 30px;
+}
+.row{
+    width: 100%;
+    margin: 0;
+}
+.information .info{
+    width: 300px;
+    margin:  0 auto;
+    padding-top: 20px;
+}
+.information .info .img{
+    padding-left: 50px;
+}
+.information .info .img img{
+    height: 100px;
+    border-radius: 50%
+}
+.info .my-name{
+    padding-top: 15px;
+    padding-left: 50px;
+}
+.info .my-page{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.info .my-page a{
+    color: blue;
+}
+.title{
+    margin-top: 30px;
+    background-color: white;
+}
+.title .message{
+    padding-top: 20px;
+}
+.title .tab{
+    height: 351px;
+}
+.title .tab ul a{
+    color: #2aabd2;
+}
+.home span:hover{
+    cursor: pointer;
+}
+.alert.message{
+    border-bottom: 1px solid #dddddd;
+}
+.alert{
+    margin-bottom: 0 !important;
+}

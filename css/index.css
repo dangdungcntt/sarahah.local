@@ -1,0 +1,19 @@
+.content{
+    /*margin-top: 50px;*/
+    width: 80%;
+    margin:  0 auto;
+    background-color: #fafafa;
+}
+.honest{
+    padding-top: 30px;
+}
+.content .infor{
+    padding-top: 50px;
+    width: 100%;
+}
+.content .infor .a{
+    width: 50%;
+}
+.content .infor ul{
+    padding-left: 50px;
+}

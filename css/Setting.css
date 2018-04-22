@@ -1,0 +1,12 @@
+.content{
+    background-color: #fafafa;
+    height: 850px;
+}
+.row{
+    margin: 0;
+    padding-top: 40px;
+}
+.right{
+    background-color: white;
+    padding-top: 10px;
+}

@@ -1,0 +1,38 @@
+.content{
+    width: 100%;
+    background-color: #fafafa;
+}
+.img{
+    width: 150px;
+    position: absolute;
+    z-index: 10000000;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 40px;
+}
+.img img{
+    width: 150px;
+    border-radius: 50%;
+}
+.row{
+    position: relative;
+    /*background-color: white;*/
+    /*margin-top: 100px;*/
+    z-index: 2;
+}
+.mess{
+    background-color: white;
+    margin-top: 75px;
+    height: 400px;
+}
+h3{
+    margin-top: 90px;
+}
+textarea{
+    resize: none;
+    background-color: #fbfefe;
+}
+button{
+    margin-top: 30px;
+}
