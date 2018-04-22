@@ -7,7 +7,7 @@
  */
 $dbhost = "localhost";
 $dbuser = "root";
-$dbpass = "pass";
+$dbpass = "";
 $dbname = "sarahah";
 
 $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);

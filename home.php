@@ -87,9 +87,15 @@
                         <div id="home" class="tab-pane fade in active">
                             <div class="clearfix">
                                 <?php foreach ($array_content as $content): ?>
+                                    <?php $idMess = $content['id'];?>
+
                                     <div class="alert alert-dismissible message">
-                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                                        <p class="text-left"><?php echo $content['content'] ?></p>
+                                        <a class="close xxx" data-dismiss="alert" aria-label="close" message-id = "<?php echo $idMess ?>">&times;</a>
+                                        <p class="text-left"><?php echo $content['content'] ?> 
+                                            <a href="https://www.facebook.com/share.php?u=http://sarahah.local/action/share?id=<?php echo $idMess ?>">
+                                                <i class="fa fa-facebook-official" style="font-size: 18px;color: #3b5998;"></i>
+                                            </a>
+                                        </p>
                                     </div>
                                 <?php endforeach; ?>
                             </div>
@@ -116,5 +122,6 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="js/delete.js"></script>
 </body>
 </html>
