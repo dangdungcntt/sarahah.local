@@ -72,7 +72,7 @@
             ?>
             <form action="" method="post">
                 <div class="form-group">
-                    <a class="btn" style="width: 100%; background-color: #3c5a99; color: white; font-size: 16px; border: 0;">
+                    <a href="" class="btn" style="width: 100%; background-color: #3c5a99; color: white; font-size: 16px; border: 0;">
                         <img src="img/fb.png" style="width: 40px;">Login with Facebook
                     </a>
                 </div>

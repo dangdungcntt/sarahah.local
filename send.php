@@ -1,3 +1,18 @@
+<?php 
+    require_once 'connect.php';
+    if(!empty($_SESSION['email'])){
+        header('Location: home.php');
+    }
+    if(isset($_POST['btnSend'])){
+       $userid =  $_GET['userid'];
+       $noidung = $_POST['noidung'];
+       $query = "insert into message (idreceive, content) values ('{$userid}','{$noidung}')";
+       $result = $conn->query($query);
+       if($result === true){
+            header("location: home.php");
+       }
+    }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,11 +61,11 @@
             <div class="row">
                 <div class="mess col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
                     <h3 class="text-center">Quan Luong</h3>
-                    <form>
+                    <form action="" method="post">
                         <div class="form-group">
-                            <textarea class="form-control" rows="7" id="comment"></textarea>
+                            <textarea class="form-control" rows="7" id="comment" name="noidung"></textarea>
                         </div>
-                        <button class="btn btn-primary center-block">Send</button>
+                        <button class="btn btn-primary center-block" name="btnSend">Send</button>
                     </form>
                 </div>
             </div>
