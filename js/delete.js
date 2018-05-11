@@ -9,9 +9,7 @@ $(document).ready(function(){
 			success: function(res){
 				// res = JSON.parse(res);
 				console.log(res);
-				// if(ress.success){
-
-				// }
+				
 			}
 		});
 	});

@@ -5,15 +5,20 @@
         header("location: login.php");
     }
     $id = $_SESSION['id'];
+
     $query = "select id,content from message where idreceive = '{$id}'";
     $result = $conn->query($query);
     $array_content = [];
+
     if($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
             array_push($array_content,$row);
         }
         rsort($array_content);
     }
+    $query2 = "select name from users where id = {$id}";
+    $result2 = $conn->query($query2);
+    $username = $result2->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,43 +35,20 @@
 </head>
 <body>
 <div class="">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="home">
-                    <a class="" href="#">
-                        <img src="img/Logo.png" alt=""> Sarahah
-                    </a>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <!---->
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="home.php">My Message</a></li>
-                    <li><a href="setting.php?page=information">Setting</a></li>
-                    <li><a href="logout.php">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php require __DIR__ . "/page/menu2.html" ; ?>
     <div class="content">
         <div class="row">
             <div class="information col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="info">
                     <div class="img">
-                        <img src="img/avatar.jpg" alt="">
+                        <img src="img/avatar.jpg" style="width: 100px; height: 100px;">
                     </div>
                     <div class="my-name">
-                        <i class="material-icons" style="font-size: 16px; color: dodgerblue">settings</i>
-                        <span>Quan Luong</span>
+                        <!-- <i class="material-icons" style="font-size: 16px; color: dodgerblue">settings</i> -->
+                        <span><?php echo $username['name']; ?></span>
                     </div>
                     <div class="my-page">
-                        <a href="sarahah.local/send.php?user=dinhquan157">sarahah.local/send?dinhquan157</a>
+                        <a href="https://sarahah.devv/send.php?userid=<?php echo $id; ?>">https://sarahah.devv/send.php?userid=<?php echo $id ?></a>
                     </div>
                 </div>
             </div>
@@ -80,8 +62,8 @@
                 <div class="tab col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#home">Recieved</a></li>
-                        <li><a data-toggle="tab" href="#menu2">Favorities</a></li>
-                        <li><a data-toggle="tab" href="#menu3">Sent</a></li>
+                        <!-- <li><a data-toggle="tab" href="#menu2">Favorities</a></li>
+                        <li><a data-toggle="tab" href="#menu3">Sent</a></li> -->
                     </ul>
                     <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
@@ -92,7 +74,7 @@
                                     <div class="alert alert-dismissible message">
                                         <a class="close xxx" data-dismiss="alert" aria-label="close" message-id = "<?php echo $idMess ?>">&times;</a>
                                         <p class="text-left"><?php echo $content['content'] ?> 
-                                            <a href="https://www.facebook.com/share.php?u=http://sarahah.local/action/share?id=<?php echo $idMess ?>">
+                                            <a href="generateImg.php?message-id=<?php echo $idMess; ?>">
                                                 <i class="fa fa-facebook-official" style="font-size: 18px;color: #3b5998;"></i>
                                             </a>
                                         </p>
@@ -100,7 +82,7 @@
                                 <?php endforeach; ?>
                             </div>
                         </div>
-                        <div id="menu2" class="tab-pane fade">
+                       <!--  <div id="menu2" class="tab-pane fade">
                             <div class="clearfix">
                                 <div class="alert alert-dismissible">
                                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -115,7 +97,7 @@
                                     <p class="text-left">aaaaaaaa.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

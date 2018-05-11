@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!empty($_SESSION['email'])){
+    if(!empty($_SESSION['id'])){
         header('Location: home.php');
     }
 
@@ -14,33 +14,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header1.css">
-
 </head>
 <div class="">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="home">
-                    <a class="" href="index.php">
-                        <img src="img/Logo.png" alt=""> Sarahah
-                    </a>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <!---->
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="register.php">Sign Up</a></li>
-                    <li><a href="login.php">Login</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php require __DIR__ . "/page/menu1.html"; ?>
+   
+            
+      
     <div class="content">
         <div class="honest">
             <span><!-- Get honest feedback from your coworkers and friends --></span>
@@ -70,4 +49,4 @@
     <div class="footer">
     </div>
 </div>
-</html>
+</html>ư
