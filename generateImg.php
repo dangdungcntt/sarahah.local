@@ -40,6 +40,6 @@
 	imagePng($im,$imgName); // Tiến hành tạo file ảnh mới có tên 66.png và cho chữ rõ hơn hàm imagejpeg()
 	 // Gọi kết quả
 	ImageDestroy($im);
-	$imgLink = urlencode("https://3d6a23d7.ngrok.io/action/share.php?img=$userid-$idMess");
+	$imgLink = urlencode("https://chát.vn/action/share.php?img=$userid-$idMess");
 	header("Location: https://www.facebook.com/share.php?u=$imgLink");
 ?>
