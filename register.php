@@ -37,7 +37,7 @@ if (isset($_POST['btnRegister'])) {
 <div class="">
     <?php require __DIR__ . "/page/menu1.html"; ?>
     <h1 class="text-center">Register</h1>
-    <div class="content col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+    <div class="content col-lg-4 col-lg-offset-4 col-md-8 col-md-offset-2">
         <?php
         if (isset($error)) {
             echo '<div class="alert alert-danger" role="alert">' . $error . '</div>';
