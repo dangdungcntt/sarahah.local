@@ -22,7 +22,7 @@
       
     <div class="content">
         <div class="honest">
-            <span><!-- Get honest feedback from your coworkers and friends --></span>
+            <span>Get honest feedback from your coworkers and friends</span>
         </div>
         <div class="infor clearfix">
             <div class="col-lg-6 col-md-6 col-xs-12 at-work pull-left">
