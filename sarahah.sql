@@ -40,7 +40,7 @@ CREATE TABLE `message` (
 
 INSERT INTO `message` (`id`, `idreceive`, `content`) VALUES
 (1, 1, 'chào quân'),
-(2, 5, 'chao b'),
+(2, 2, 'chao b'),
 (3, 1, 'quan');
 
 -- --------------------------------------------------------
@@ -62,7 +62,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 (1, 'Luong Dinh Quan', 'a@a.a', '202cb962ac59075b964b07152d234b70'),
-(5, '', 'b@b.b', '21232f297a57a5a743894a0e4a801fc3');
+(2, '', 'b@b.b', '21232f297a57a5a743894a0e4a801fc3');
 
 --
 -- Indexes for dumped tables
