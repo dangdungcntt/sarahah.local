@@ -1,7 +1,6 @@
 <?php $image = $_GET['img'];
 echo "<img src='".$image."'>";
  ?>
-<img src="'$image'">
 <meta property="og:title" content="Nhắn tin ẩn danh" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://socolaworld.ga" />
