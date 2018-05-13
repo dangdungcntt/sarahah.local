@@ -48,7 +48,7 @@
                         <span><?php echo $username['name']; ?></span>
                     </div>
                     <div class="my-page">
-                        <a href="https://chát.vn/send.php?userid=<?php echo $id; ?>">https://chát.vn/send.php?userid=<?php echo $id ?></a>
+                        <a href="https://sarahah.devv/send.php?userid=<?php echo $id; ?>">https://sarahah.devv/send.php?userid=<?php echo $id ?></a>
                     </div>
                 </div>
             </div>

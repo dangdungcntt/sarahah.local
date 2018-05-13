@@ -19,7 +19,7 @@
     <p class="text-danger" style="font-size: 16px; font-weight: bold;">Are you sure that you want to delete your account?</p>
     <p class="text-danger" style="font-size: 16px; font-weight: bold;">Deleting the account is irreversible!</p>
 </div>
-<a class="btn btn-default">Cancel</a>
+<a class="btn btn-default" href="home.php">Cancel</a>
 <form action="" method="post">
     <button class="btn btn-danger" name="btnDelete">Remove</button>
 </form>

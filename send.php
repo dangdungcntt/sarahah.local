@@ -40,7 +40,7 @@
 <body>
     <div>
         <?php 
-            if(empty($_SESSION['email'])){
+            if(empty($_SESSION['id'])){
                 require __DIR__ . "/page/menu1.html";
             }
             else{
