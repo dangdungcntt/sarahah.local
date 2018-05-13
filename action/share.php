@@ -1,4 +1,6 @@
-<?php $image = $_GET['img']; ?>
+<?php $image = '../img/share/Message-1-7.png';
+echo "<img src='".$image."'>";
+?>
 <meta property="og:title" content="Xu hướng công nghệ" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://socolaworld.ga" />
