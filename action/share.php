@@ -1,5 +1,5 @@
 <?php $image = $_GET['img'];
-echo "<img src='../img/share/Message-".$image."'>";
+echo "<img src='../img/share/Message-".$image.".png'>";
  ?>
 <meta property="og:title" content="Nhắn tin ẩn danh" />
 <meta property="og:type" content="website" />
