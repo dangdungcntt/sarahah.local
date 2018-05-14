@@ -8,9 +8,9 @@
 	$query = "select content from message where idreceive = $userid and id = $idMess";
 	$result = $conn->query($query);
 	
-	//$string = $result->fetch_assoc()['content'];
+	$string = $result->fetch_assoc()['content'];
 
-	$string = "chao cho";
+	
 	$im = ImageCreateFromJpeg("./img/share/a.jpg"); // Link ảnh gốc
 	
 	
