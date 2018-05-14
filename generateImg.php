@@ -10,7 +10,7 @@
 	
 	$string = $result->fetch_assoc()['content'];
 
-	
+	die($string);
 	$im = ImageCreateFromJpeg("./img/share/a.jpg"); // Link ảnh gốc
 	
 	
